@@ -9,7 +9,7 @@ let User = require('./user.model');
 app.use(cors());
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/finance', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://thenaschkatze:21guitarra@cluster0.rr4hf.mongodb.net/finance?retryWrites=true&w=majority', { useNewUrlParser: true });
 const connection = mongoose.connection;
 
 connection.once('open', function() {
